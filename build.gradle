@@ -71,5 +71,8 @@ dependencies {
 
 //    testCompile group: 'junit', name: 'junit', version: '4.11'
 
-	
+    compile ('org.apache.zookeeper:zookeeper:3.3.3'){
+        exclude (group:"org.slf4j")
+    }
+    compile "com.github.sgroschupf:zkclient:0.1"
 }

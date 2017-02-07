@@ -15,6 +15,6 @@ public class DubboTestService {
     private DemoService demoService;
 
     public String callDubboService(String username){
-        return demoService.sayHello(username);
+        return demoService.sayHello(username).get("data").toString();
     }
 }
